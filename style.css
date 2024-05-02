@@ -1,0 +1,270 @@
+.fon{
+    background-image: url('https://sun9-80.userapi.com/impg/1jGtxEuiljz8e_TKmFWr5Q6hGsbowjd_aPSJzg/tn_oRqkWg3A.jpg?size=300x168&quality=96&sign=25d282f83465cf9d877c7dc86270fe95&type=album');
+    background-size: cover;
+}
+body{
+    margin:0;
+    font-family: "Courier", monospace;
+    line-height:1.5;
+    color: black;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    text-align: center;
+}
+
+/*titles*/
+
+.zaglavie{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:800px;
+    background-size: cover;
+}
+
+.zaglavie_title{
+    font-size: 300%; 
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.zaglavie_bio_title{
+    font-size: 300%;
+    padding: 0px 10px 0px 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.zaglavie_photos_title{
+    font-size: 300%;
+    padding: 0px 10px 0px 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.zaglavie_resume_title{
+    font-size: 300%;
+    padding: 0px 10px 0px 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.zaglavie_contact_title{
+    font-size: 300%;
+    padding: 0px 10px 0px 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*head*/
+
+header{
+   padding-top:5px;
+   position:static;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1000;
+    background-color:#9b7960;
+}
+
+/*всё по краям*/
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header section {
+    font-size: 1.5em;
+    padding: 0px 20px 0px 10px;
+}
+
+/*навигация*/
+
+.nav_links{
+    font-size: 150%;
+    text-transform: uppercase;
+    padding: 10px 0px 0px 0px;
+    gap: 10px;
+}
+
+.nav_links a, .header a{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 70%;
+    padding: 0px 25px 0px 0px;
+    color:black;
+    text-decoration: none; 
+    transition: color 1s linear;
+}
+
+.nav_links a:hover{
+    color:#f3f3de;
+}
+
+/*биография*/
+#biography{
+    font-family: 'Arial', 'sans-serif', 'Courier New','Georgia';
+    font-size: 30px;
+    display: flex;
+    border: 10px solid white;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    color: black;
+}
+
+/*фото*/
+
+.photos{
+    overflow: hidden;
+    text-align: center;
+    padding:2rem;
+}
+
+#fotkavipusk{
+    width: 100%;
+    max-width: 50rem;
+    height:50rem;
+    display:inline-block;
+    overflow: hidden;
+    border: .1rem solid #fff;
+    margin:1rem;
+}
+
+.fotki{
+    width:100%;
+    max-width: 50rem;
+    height:50rem;
+    display:inline-block;
+    overflow: hidden;
+    border: .1rem solid #fff;
+    margin:1rem;
+}
+
+/*резюме*/
+
+table{
+    color: black;
+}
+
+.tablica{
+    color: black;
+}
+
+.resume section{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px 20px 20px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.resume section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.resume section table th, .resume section table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.resume section table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/*контакты*/
+
+.contact-form{
+    font-family: 'Arial', 'sans-serif', 'Courier New','Georgia';
+    font-size: 30px;
+    color: black;
+    margin-left: 300px;
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+    font-size: 20px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #f3f3de;
+}
+
+.list-inline-item {
+  display: inline-block;
+}
+
+.fotkagl{
+    width: 100%;
+    max-width: 40rem;
+    height: 40rem;
+    display: block;
+    overflow: hidden;
+    border: .1rem solid #fff;
+    margin: 1rem auto;    
+}

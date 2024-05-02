@@ -1,0 +1,82 @@
+<html class = "fon">
+	<head>
+        <title>Контакты</title>
+        <link rel="stylesheet" href="style.css">
+        <link type="Image/x-icon" href="https://sun9-64.userapi.com/impg/5B8EbMCHaGYS7vp5ZpdmRQjl6JJfiqc436l9VQ/cDD06T4kD3g.jpg?size=32x32&quality=96&sign=fd4b5c454b8b27fd3ac1b7120fd99fe5&type=album" rel="icon">
+    </head>
+
+    <body>
+
+    <header>
+        <nav class="header">
+            <section>Портфолио</section>
+            <nav class="nav_links">
+                <a href="index.html">Главная</a>
+                <a href="bio.html">Биография</a>
+                <a href="resume.html">Резюме</a>
+                <a href="photos.html">Фотографии</a>
+            </nav>
+        </nav>
+    </header>
+
+    <section class = "zaglavie_contact">
+        <h2 class = "zaglavie_contact_title">Контакты</h2>
+    </section>
+
+	    <main class="contact-form">
+        <section>
+            <h2>Связаться со мной:</h2>
+            <form id="form">
+                <label for="name">Имя:</label>
+                <input name = "Имя" type="text" id="name"required>
+                <label for="email">Email:</label>
+                <input name ="e-mail"  type="email" id="email"required>
+                <label for="phone">Номер телефона:</label>
+                <input name = "Телефон" type="text" id="phone">
+                <label for="message">Ваше сообщение:</label>
+                <textarea name = "Сообщение" id="message"required></textarea>
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
+        <section>
+            <h2>Также можно связаться здесь:</h2>
+            <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                    <a href="tel:+79121929699">
+                        <i class="Phone">📞</i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://vk.com/evoiv">
+                        <i class="VK">VK</i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://t.me/toky0pill">
+                        <i class="Telegram">TG</i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="mailto:stud179297@vyatsu.ru">
+                        <i class="Mail">📩</i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+	<script>
+	emailjs.init("d0pbMmLins7QIXbGL");
+	document.getElementById("form").addEventListener('submit', function(event) {
+	event.preventDefault(); // Не обновляйте страницу, пока сообщение не отправлено
+	emailjs.sendForm('service_6xo3tik', 'template_2282a6g', this)
+	.then(function() {
+	alert('Сообщение успешно отправлено!');
+	}, function(error) {
+	alert('Ошибка отправки: ' + error);
+	});
+	});
+</script>
+	</body>
+
+</html>
